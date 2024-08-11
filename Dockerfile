@@ -10,7 +10,7 @@ COPY package*.json ./
 # Install app dependencies
 RUN npm install --legacy-peer-deps
 
-RUN npm i -g @nestjs/cli@13.0.0
+RUN npm i -g @nestjs/cli@10.0.0
 
 # Bundle app source
 COPY . .

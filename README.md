@@ -1,73 +1,56 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Fashion E-commerce Backend
+Backend cung cấp API cho ứng dụng bán hàng thời trang, quản lý sản phẩm, đơn hàng, người dùng và các chức năng liên quan.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Tính năng chính:
+👚 <strong>Quản lý sản phẩm: </strong>
+  * Thêm, sửa, xóa, tìm kiếm sản phẩm.
+  * Quản lý danh mục sản sản phẩm, thuộc tính và biến thể.
+  * Tải lên và lưu trữ hình ảnh của sản phẩm.
+  * Phân trang, tìm kiếm và sắp xếp sản phẩm.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+👨‍👨‍👧‍👦 <strong>Quản lý người dùng:</strong>
+* Đăng ký và xác thực người dùng.
+* Quản lý hồ sơ người dùng và đơn hàng.
+* Quản lý lịch sử đánh giá.
+* Phân trang, tìm kiếm và sắp xếp người dùng.
 
-## Description
+🛒 <strong>Quản lý giỏ hàng:</strong>
+* Thêm, sửa, xóa sản phẩm trong giỏ hàng.
+* Tính toán tổng giá trị giỏ hàng.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+📦 <strong>Quản lý đơn hàng:</strong>
+* Đặt hàng, theo dõi trạng thái đơn hàng.
+* Xử lý thanh toán và hoàn thành đơn hàng.
+* Phân trang, tìm kiếm và sắp xếp đơn hàng.
 
-## Installation
+⭐ <strong>Quản lý đánh giá:</strong>
+* Viết đánh giá sản phẩm.
+* Xếp hạng sản phẩm.
+* Phân trang, tìm kiếm và sắp xếp đánh giá.
 
-```bash
-$ npm install
-```
+💰 <strong>Quản lý khuyến mãi:</strong>
+* Tạo và quản lý mã giảm giá.
+* Áp dụng khuyến mãi cho đơn hàng.
+* Phân trang, tìm kiếm và sắp xếp khuyến mãi.
 
-## Running the app
+📍 <strong>Quản lý địa chỉ nhận hàng:</strong>
+* Thêm, sửa, xóa địa chỉ nhận hàng.
+* Chọn địa chỉ nhận hàng cho đơn hàng.
 
-```bash
-# development
-$ npm run start
+🔐 <strong>Quản lý phân quyền:</strong>
+* Cấp quyền truy cập cho người dùng vào các chức năng khác nhau của hệ thống.
+* Quản lý vai trò và quyền hạn của người dùng.
+* Phân trang, tìm kiếm và sắp xếp vai trò và quyền hạn.
 
-# watch mode
-$ npm run start:dev
+## Công nghệ:
+* <strong>Backend Framework:</strong> NestJS
+* <strong>Databse:</strong> MongoDB
+* <strong>Cloud Platform:</strong> Render Platform
+* <strong>ORM:</strong> Mongoose
+* <strong>Security:</strong> Helmet, CORS
 
-# production mode
-$ npm run start:prod
-```
+## Tài liệu tham khảo cho API:
+* <strong> Swagger: 👉 [Tài liệu Swagger](https://p-nestjs-ecommerce.onrender.com/swagger) </strong>
+* <strong> Compodoc: 👉 [Tài liệu Compodoc](https://gyezra.github.io/backend_nestjs_fashion_doc/) </strong>
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
